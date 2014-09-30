@@ -14,6 +14,9 @@
 		66D1CFF919DB41850059BCF2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CFF819DB41850059BCF2 /* Images.xcassets */; };
 		66D1CFFC19DB41850059BCF2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D1CFFA19DB41850059BCF2 /* LaunchScreen.xib */; };
 		66D1D00819DB41850059BCF2 /* WordPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D00719DB41850059BCF2 /* WordPlayTests.m */; };
+		66D1D01319DB45AA0059BCF2 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01219DB45AA0059BCF2 /* EnterNameViewController.m */; };
+		66D1D01619DB46690059BCF2 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */; };
+		66D1D01919DB47610059BCF2 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01819DB47610059BCF2 /* ResultsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		66D1D00119DB41850059BCF2 /* WordPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D1D00619DB41850059BCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66D1D00719DB41850059BCF2 /* WordPlayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordPlayTests.m; sourceTree = "<group>"; };
+		66D1D01119DB45AA0059BCF2 /* EnterNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterNameViewController.h; sourceTree = "<group>"; };
+		66D1D01219DB45AA0059BCF2 /* EnterNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterNameViewController.m; sourceTree = "<group>"; };
+		66D1D01419DB46690059BCF2 /* EnterAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterAdjectiveViewController.h; sourceTree = "<group>"; };
+		66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
+		66D1D01719DB47610059BCF2 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		66D1D01819DB47610059BCF2 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,12 @@
 				66D1CFF219DB41850059BCF2 /* ViewController.h */,
 				66D1CFF319DB41850059BCF2 /* ViewController.m */,
 				66D1CFF519DB41850059BCF2 /* Main.storyboard */,
+				66D1D01719DB47610059BCF2 /* ResultsViewController.h */,
+				66D1D01819DB47610059BCF2 /* ResultsViewController.m */,
+				66D1D01419DB46690059BCF2 /* EnterAdjectiveViewController.h */,
+				66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */,
+				66D1D01119DB45AA0059BCF2 /* EnterNameViewController.h */,
+				66D1D01219DB45AA0059BCF2 /* EnterNameViewController.m */,
 				66D1CFF819DB41850059BCF2 /* Images.xcassets */,
 				66D1CFFA19DB41850059BCF2 /* LaunchScreen.xib */,
 				66D1CFEB19DB41850059BCF2 /* Supporting Files */,
@@ -221,6 +236,9 @@
 			files = (
 				66D1CFF419DB41850059BCF2 /* ViewController.m in Sources */,
 				66D1CFF119DB41850059BCF2 /* AppDelegate.m in Sources */,
+				66D1D01619DB46690059BCF2 /* EnterAdjectiveViewController.m in Sources */,
+				66D1D01919DB47610059BCF2 /* ResultsViewController.m in Sources */,
+				66D1D01319DB45AA0059BCF2 /* EnterNameViewController.m in Sources */,
 				66D1CFEE19DB41850059BCF2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +430,7 @@
 				66D1D00D19DB41850059BCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66D1D00E19DB41850059BCF2 /* Build configuration list for PBXNativeTarget "WordPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +439,7 @@
 				66D1D01019DB41850059BCF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
