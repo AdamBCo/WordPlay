@@ -7,6 +7,7 @@
 //
 
 #import "EnterAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
 
 @interface EnterAdjectiveViewController ()
@@ -24,6 +25,25 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+//PREPARE FOR SEGUE
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ResultsViewController *resultsViewController =segue.destinationViewController;
+    resultsViewController.adjective = self.adjectiveTextField.text;
+    resultsViewController.name = self.name;
+
+
+
+    
+}
+
+//EXIT
+
+-(void)unwindFromEnterNameViewController:(UIStoryboardSegue *)segue{
+    NSLog(@"We just got to the Adjective Screen!!");
 }
 
 
