@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.title = @"Result";
+    
+    self.resultsTextView.text = [NSString stringWithFormat:@"%@ had a fun day playing with the %@ giants!!", self.name, self.adjective];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,9 +28,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)unwindFromEnterNameViewController:(UIStoryboardSegue *)segue{
+-(void)unwindFromEnterAdjectiveViewController:(UIStoryboardSegue *)segue{
     NSLog(@"We just got to the Results Screen!!");
 }
+
+
 
 /*
 #pragma mark - Navigation

@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Name";
+    
     // Do any additional setup after loading the view.
 }
 
