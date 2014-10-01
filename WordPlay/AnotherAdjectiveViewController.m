@@ -1,25 +1,24 @@
 //
-//  EnterAdjectiveViewController.m
+//  AnotherAdjectiveViewController.m
 //  WordPlay
 //
 //  Created by Adam Cooper on 9/30/14.
 //  Copyright (c) 2014 Adam Cooper. All rights reserved.
 //
 
-#import "EnterAdjectiveViewController.h"
-#import "AnotherNameViewController.h"
+#import "AnotherAdjectiveViewController.h"
+#import "ResultsViewController.h"
 
-
-@interface EnterAdjectiveViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
+@interface AnotherAdjectiveViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *anotherAdjectiveTextField;
 
 @end
 
-@implementation EnterAdjectiveViewController
+@implementation AnotherAdjectiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Adjective";
+    self.title = @"Another Adjective";
     // Do any additional setup after loading the view.
 }
 
@@ -28,17 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-//PREPARE FOR SEGUE
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    AnotherNameViewController *resultsViewController =segue.destinationViewController;
-    resultsViewController.adjective = self.adjectiveTextField.text;
+    ResultsViewController *resultsViewController =segue.destinationViewController;
     resultsViewController.name = self.name;
+    resultsViewController.adjective = self.adjective;
+    resultsViewController.nameTwo = self.nameTwo;
+    resultsViewController.adjectiveTwo = self.anotherAdjectiveTextField.text;
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    if ([self.adjectiveTextField.text isEqualToString:@""]) {
+    if ([self.anotherAdjectiveTextField.text isEqualToString:@""]) {
         return NO;
     }
     return YES;
@@ -46,10 +44,9 @@
 
 //EXIT
 
--(void)unwindFromEnterNameViewController:(UIStoryboardSegue *)segue{
+-(void)unwindFromEnterAnotherNameViewController:(UIStoryboardSegue *)segue{
     NSLog(@"We just got to the Adjective Screen!!");
 }
-
 
 /*
 #pragma mark - Navigation

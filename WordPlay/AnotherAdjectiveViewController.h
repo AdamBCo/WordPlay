@@ -1,5 +1,5 @@
 //
-//  ResultsViewController.h
+//  AnotherAdjectiveViewController.h
 //  WordPlay
 //
 //  Created by Adam Cooper on 9/30/14.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResultsViewController : UIViewController
+@interface AnotherAdjectiveViewController : UIViewController
 @property NSString *name;
 @property NSString *adjective;
 @property NSString *nameTwo;
-@property NSString *adjectiveTwo;
-
 @end

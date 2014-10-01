@@ -24,4 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)unwindFromResultsViewController:(UIStoryboardSegue *)segue{
+    NSLog(@"We are back at the begining!");
+}
+
 @end

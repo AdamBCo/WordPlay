@@ -17,6 +17,8 @@
 		66D1D01319DB45AA0059BCF2 /* EnterNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01219DB45AA0059BCF2 /* EnterNameViewController.m */; };
 		66D1D01619DB46690059BCF2 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */; };
 		66D1D01919DB47610059BCF2 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01819DB47610059BCF2 /* ResultsViewController.m */; };
+		66D1D01C19DB99130059BCF2 /* AnotherNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01B19DB99130059BCF2 /* AnotherNameViewController.m */; };
+		66D1D01F19DB992A0059BCF2 /* AnotherAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D1D01E19DB992A0059BCF2 /* AnotherAdjectiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
 		66D1D01719DB47610059BCF2 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		66D1D01819DB47610059BCF2 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		66D1D01A19DB99130059BCF2 /* AnotherNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherNameViewController.h; sourceTree = "<group>"; };
+		66D1D01B19DB99130059BCF2 /* AnotherNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherNameViewController.m; sourceTree = "<group>"; };
+		66D1D01D19DB992A0059BCF2 /* AnotherAdjectiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherAdjectiveViewController.h; sourceTree = "<group>"; };
+		66D1D01E19DB992A0059BCF2 /* AnotherAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherAdjectiveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,13 +100,17 @@
 				66D1CFF019DB41850059BCF2 /* AppDelegate.m */,
 				66D1CFF219DB41850059BCF2 /* ViewController.h */,
 				66D1CFF319DB41850059BCF2 /* ViewController.m */,
-				66D1CFF519DB41850059BCF2 /* Main.storyboard */,
-				66D1D01719DB47610059BCF2 /* ResultsViewController.h */,
-				66D1D01819DB47610059BCF2 /* ResultsViewController.m */,
-				66D1D01419DB46690059BCF2 /* EnterAdjectiveViewController.h */,
-				66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */,
 				66D1D01119DB45AA0059BCF2 /* EnterNameViewController.h */,
 				66D1D01219DB45AA0059BCF2 /* EnterNameViewController.m */,
+				66D1D01419DB46690059BCF2 /* EnterAdjectiveViewController.h */,
+				66D1D01519DB46690059BCF2 /* EnterAdjectiveViewController.m */,
+				66D1D01A19DB99130059BCF2 /* AnotherNameViewController.h */,
+				66D1D01B19DB99130059BCF2 /* AnotherNameViewController.m */,
+				66D1D01D19DB992A0059BCF2 /* AnotherAdjectiveViewController.h */,
+				66D1D01E19DB992A0059BCF2 /* AnotherAdjectiveViewController.m */,
+				66D1D01719DB47610059BCF2 /* ResultsViewController.h */,
+				66D1D01819DB47610059BCF2 /* ResultsViewController.m */,
+				66D1CFF519DB41850059BCF2 /* Main.storyboard */,
 				66D1CFF819DB41850059BCF2 /* Images.xcassets */,
 				66D1CFFA19DB41850059BCF2 /* LaunchScreen.xib */,
 				66D1CFEB19DB41850059BCF2 /* Supporting Files */,
@@ -237,6 +247,8 @@
 				66D1CFF419DB41850059BCF2 /* ViewController.m in Sources */,
 				66D1CFF119DB41850059BCF2 /* AppDelegate.m in Sources */,
 				66D1D01619DB46690059BCF2 /* EnterAdjectiveViewController.m in Sources */,
+				66D1D01C19DB99130059BCF2 /* AnotherNameViewController.m in Sources */,
+				66D1D01F19DB992A0059BCF2 /* AnotherAdjectiveViewController.m in Sources */,
 				66D1D01919DB47610059BCF2 /* ResultsViewController.m in Sources */,
 				66D1D01319DB45AA0059BCF2 /* EnterNameViewController.m in Sources */,
 				66D1CFEE19DB41850059BCF2 /* main.m in Sources */,

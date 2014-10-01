@@ -1,25 +1,25 @@
 //
-//  EnterNameViewController.m
+//  AnotherNameViewController.m
 //  WordPlay
 //
 //  Created by Adam Cooper on 9/30/14.
 //  Copyright (c) 2014 Adam Cooper. All rights reserved.
 //
 
-#import "EnterNameViewController.h"
-#import "EnterAdjectiveViewController.h"
+#import "AnotherNameViewController.h"
+#import "AnotherAdjectiveViewController.h"
 
-@interface EnterNameViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@interface AnotherNameViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *anotherNameTextField;
 
 @end
 
-@implementation EnterNameViewController
+@implementation AnotherNameViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Name";
-    
+    self.title = @"Another Name";
     // Do any additional setup after loading the view.
 }
 
@@ -28,17 +28,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    EnterAdjectiveViewController *adjectiveViewController = segue.destinationViewController;
-    adjectiveViewController.name = self.nameTextField.text;
-    
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    AnotherAdjectiveViewController *resultsViewController =segue.destinationViewController;
+    resultsViewController.name = self.name;
+    resultsViewController.adjective = self.adjective;
+    resultsViewController.nameTwo = self.anotherNameTextField.text;
 }
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
-    if ([self.nameTextField.text isEqualToString:@""]) {
+    if ([self.anotherNameTextField.text isEqualToString:@""]) {
         return NO;
     }
     return YES;
+}
+
+//EXIT
+
+-(void)unwindFromEnterNameViewController:(UIStoryboardSegue *)segue{
+    NSLog(@"We just got to the Adjective Screen!!");
 }
 
 /*

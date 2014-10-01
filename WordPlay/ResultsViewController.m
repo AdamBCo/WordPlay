@@ -10,6 +10,7 @@
 
 @interface ResultsViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *resultsTextView;
+@property(nonatomic,copy) NSAttributedString *attributedText;
 
 @end
 
@@ -19,8 +20,61 @@
     [super viewDidLoad];
     self.title = @"Result";
     
-    self.resultsTextView.text = [NSString stringWithFormat:@"%@ had a fun day playing with the %@ giants!!", self.name, self.adjective];
+    NSString *personOneName = self.name;
+    NSString *personOneAdjective = self.adjective;
+    NSString *personTwoName = self.nameTwo;
+    NSString *personTwoAdjective = self.adjectiveTwo;
     
+    NSInteger nameRange = [personOneName length];
+    NSInteger adjectiveRange = [personOneAdjective length];
+    NSInteger nameTwoRange = [personTwoName length];
+    NSInteger adjectiveTwoRange = [personTwoAdjective length];
+    
+    NSString *finalText = [NSString stringWithFormat:@"%@ and %@ had a fun day playing with the %@, %@ giants!!", personOneName, personTwoName, personOneAdjective, personTwoAdjective];
+    NSLog(@"%@", finalText);
+    NSMutableAttributedString * string = [[NSMutableAttributedString alloc] initWithString:finalText];
+    
+    
+    NSRange rangeOne = [finalText rangeOfString:personOneName];
+    if (rangeOne.location == NSNotFound) {
+        NSLog(@"string was not found");
+    } else {
+        NSLog(@"position %lu", (unsigned long)rangeOne.location);
+    }
+    
+    NSRange rangeTwo = [finalText rangeOfString:personOneAdjective];
+    if (rangeTwo.location == NSNotFound) {
+        NSLog(@"string was not found");
+    } else {
+        NSLog(@"position %lu", (unsigned long)rangeTwo.location);
+    }
+    
+    NSRange rangeThree = [finalText rangeOfString:personTwoName];
+    if (rangeOne.location == NSNotFound) {
+        NSLog(@"string was not found");
+    } else {
+        NSLog(@"position %lu", (unsigned long)rangeThree.location);
+    }
+    
+    NSRange rangeFour = [finalText rangeOfString:personTwoAdjective];
+    if (rangeTwo.location == NSNotFound) {
+        NSLog(@"string was not found");
+    } else {
+        NSLog(@"position %lu", (unsigned long)rangeFour.location);
+    }
+    
+    NSUInteger finalRangeOne = rangeOne.location;
+    NSUInteger finalRangeTwo = rangeTwo.location;
+    NSUInteger finalRangeThree = rangeThree.location;
+    NSUInteger finalRangeFour = rangeFour.location;
+    
+    UIFont *font = [UIFont fontWithName:@"Helvetica-Bold" size:13.0f];
+    [string addAttribute:NSFontAttributeName value:font range:NSMakeRange(finalRangeOne, nameRange)];
+    [string addAttribute:NSFontAttributeName value:font range:NSMakeRange(finalRangeTwo, adjectiveRange)];
+    [string addAttribute:NSFontAttributeName value:font range:NSMakeRange(finalRangeThree, nameTwoRange)];
+    [string addAttribute:NSFontAttributeName value:font range:NSMakeRange(finalRangeFour, adjectiveTwoRange)];
+    
+    self.resultsTextView.attributedText = string;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,6 +85,7 @@
 -(void)unwindFromEnterAdjectiveViewController:(UIStoryboardSegue *)segue{
     NSLog(@"We just got to the Results Screen!!");
 }
+
 
 
 
